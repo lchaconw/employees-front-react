@@ -1,13 +1,13 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
-import Navbar from '../components/NavBar';
 import EmployeeForm from '../components/EmployeeForm';
+import CustomNavBar from '../components/Navbar';
 
 const AddEditEmployee: React.FC = () => {
 
   return (
     <div>
-      <Navbar />
+      <CustomNavBar />
       <Container className='mt-5'>
         <EmployeeForm />
       </Container>

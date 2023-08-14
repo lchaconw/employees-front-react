@@ -1,13 +1,13 @@
 import React from 'react'
 import EmployeeTable from '../components/EmployeeTable';
 import { Container } from 'react-bootstrap';
-import Navbar from '../components/NavBar';
 import { Link } from 'react-router-dom';
+import CustomNavbar from '../components/Navbar';
 
 const EmployeesList: React.FC = () => {
   return (
     <div>
-      <Navbar />
+      <CustomNavbar />
       <Container className='mt-5'>
         <div className="d-flex justify-content-end">
           <Link to="/employee/add">

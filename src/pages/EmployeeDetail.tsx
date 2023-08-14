@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import Employee from '../models/Employee';
 import { getEmployeeDetails } from '../services/employeeServices';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/NavBar';
+import CustomNavbar from '../components/Navbar';
 
 const EmployeeDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -22,7 +22,7 @@ const EmployeeDetail: React.FC = () => {
 
   return (
     <>
-      <Navbar />
+      <CustomNavbar />
       <Container>
         <Row className="mt-5">
           <div className="d-flex justify-content-end">

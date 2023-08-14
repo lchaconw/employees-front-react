@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar as BSNavbar, Nav, Container, Image } from 'react-bootstrap';
 
-const Navbar: React.FC = () => {
+const CustomNavbar: React.FC = () => {
   return (
     <BSNavbar expand="lg" bg="primary" variant="dark">
       <Container fluid>
@@ -26,4 +26,4 @@ const Navbar: React.FC = () => {
   );
 }
 
-export default Navbar;
+export default CustomNavbar;
