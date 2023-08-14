@@ -33,10 +33,9 @@ const EmployeeTable: React.FC = () => {
             <td>{employee.lastName}</td>
             <td>{employee.positionTitle}</td>
             <td>{formatDate(employee.hireDate)}</td>
-            <td>{/* You need to provide the status from the backend or determine it somehow */}</td>
+            <td>Active</td>
             <td>
               <Button variant="primary" href={`/details/${employee.id}`}>View</Button>
-              {/* <Button variant="primary" onClick={() => viewDetails(employee.id!)}>View</Button> */}
             </td>
           </tr>
         ))}
